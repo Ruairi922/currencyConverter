@@ -15,4 +15,4 @@
 
 # Contributors
 - [Ruairi Mulhall](https://github.com/Ruairi922): 
-- [Contributor Name](https://github.com/contributor-username):
+- [Shina Anafi](https://github.com/contributor-username):
