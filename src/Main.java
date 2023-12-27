@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class Main {
-    public void converterFromEuro(int amount, String currency) {
+     public void converterFromEuro(int amount, String currency) {
         double exchangeRate = 0;
 
         double ans = 0.0;
@@ -11,24 +11,108 @@ public class Main {
 
         switch (currency.toUpperCase()) {
             case "RUB":
-                exchangeRate = 101.51;
+                exchangeRate = 101.74;
                 ans = amount * exchangeRate;
                 System.out.println("₽ " + decimalFormat.format(ans));
                 break;
             case "ZAR":
-                exchangeRate = 20.58;
+                exchangeRate = 20.40;
                 ans = amount * exchangeRate;
                 System.out.println("R " + decimalFormat.format(ans));
                 break;
             case "BRL":
-                exchangeRate = 5.32;
+                exchangeRate = 5.36;
                 ans = amount * exchangeRate;
                 System.out.println("R$ " + decimalFormat.format(ans));
                 break;
             case "INR":
-                exchangeRate = 91.73;
+                exchangeRate = 92.45;
                 ans = amount * exchangeRate;
                 System.out.println("₹ " + decimalFormat.format(ans));
+                break;
+            case "TRY":
+                exchangeRate = 32.65;
+                ans = amount * exchangeRate;
+                System.out.println("₺ " + decimalFormat.format(ans));
+                break;
+            case "KRW":
+                exchangeRate = 1436.16;
+                ans = amount * exchangeRate;
+                System.out.println("₩ " + decimalFormat.format(ans));
+                break;
+            case "NOK":
+                exchangeRate = 11.21;
+                ans = amount * exchangeRate;
+                System.out.println("kr " + decimalFormat.format(ans));
+                break;
+            case "HKD":
+                exchangeRate = 8.67;
+                ans = amount * exchangeRate;
+                System.out.println("HK$ " + decimalFormat.format(ans));
+                break;
+            case "SGD":
+                exchangeRate = 1.47;
+                ans = amount * exchangeRate;
+                System.out.println("S$ " + decimalFormat.format(ans));
+                break;
+            case "MXN":
+                exchangeRate = 18.80;
+                ans = amount * exchangeRate;
+                System.out.println("$ " + decimalFormat.format(ans));
+                break;
+            case "NZD":
+                exchangeRate = 1.75;
+                ans = amount * exchangeRate;
+                System.out.println("NZ$ " + decimalFormat.format(ans));
+                break;
+            case "SEK":
+                exchangeRate = 11.04;
+                ans = amount * exchangeRate;
+                System.out.println("kr " + decimalFormat.format(ans));
+            case "CNY":
+                exchangeRate = 7.88;
+                ans = amount * exchangeRate;
+                System.out.println("¥ " + decimalFormat.format(ans));
+                break;
+            case "CHF":
+                exchangeRate = 0.94;
+                ans = amount * exchangeRate;
+                System.out.println("₣ " + decimalFormat.format(ans));
+                break;
+            case "CAD":
+                exchangeRate = 1.47;
+                ans = amount * exchangeRate;
+                System.out.println("CA$ " + decimalFormat.format(ans));
+                break;
+            case "AUD":
+                exchangeRate = 1.62;
+                ans = amount * exchangeRate;
+                System.out.println("A$ " + decimalFormat.format(ans));
+                break;
+            case "GBP":
+                exchangeRate = 0.87;
+                ans = amount * exchangeRate;
+                System.out.println("£ " + decimalFormat.format(ans));
+                break;
+            case "JPY":
+                exchangeRate = 157.76;
+                ans = amount * exchangeRate;
+                System.out.println("¥ " + decimalFormat.format(ans));
+                break;
+            case "EUR":
+                exchangeRate = 1.00;
+                ans = amount * exchangeRate;
+                System.out.println("¥ " + decimalFormat.format(ans));
+                break;
+            case "EUR":
+                exchangeRate = 1.00;
+                ans = amount * exchangeRate;
+                System.out.println("€ " + decimalFormat.format(ans));
+                break;
+            case "USD":
+                exchangeRate = 1.11;
+                ans = amount * exchangeRate;
+                System.out.println("$ " + decimalFormat.format(ans));
                 break;
             default:
                 System.out.println("Unsupported currency");
